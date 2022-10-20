@@ -90,7 +90,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(104, 107, 110, 0.537);
+  -webkit-tap-highlight-color: rgba(138, 138, 138, 0.537);
 }
 
 hr {
@@ -11295,7 +11295,11 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
-  color: grey;
+  color: #979797;
+}
+.icon {
+  padding-top: 1rem;
+  color: #D67BAB;
 }
 
 @media (min-width: 992px) {
