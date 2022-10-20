@@ -14,7 +14,7 @@ code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
+tfoot, thead, tr, th, td, article, aside,text-color
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
@@ -99,11 +99,10 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 15pt;
-		font-weight: 300 !important;
-		letter-spacing: -0.025em;
+		color: rgb(253, 254, 255);		
+		font-size: 20pt;
+		font-weight: 500 !important;
+		letter-spacing: 0;
 		line-height: 1.75em;
 	}
 
@@ -561,9 +560,17 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1.25em;
-			margin: 0.75em 0 0.25em 0;
+			font-size: 1.50em;
+			margin: 0.50em 0 0.50em 0;
+			opacity: 0.80;			
+			
+		}
+
+		#header h2 {
+			font-size: 2.25em;
+			margin: 0.80em 0 0.40em 0;
 			opacity: 0.75;
+			
 		}
 
 		#header nav {
@@ -584,12 +591,12 @@ input, select, textarea {
 				-ms-transform: translate3d(0,0,0);
 				transform: translate3d(0,0,0);
 				display: inline-block;
-				height: 5.35em;
-				line-height: 5.885em;
+				height: 1.35em;
+				line-height: 1.885em;
 				opacity: 0;
 				position: relative;
 				top: 0;
-				width: 5.35em;
+				width: 13.35em;
 			}
 
 				#header nav li:nth-child(1) {
@@ -666,18 +673,19 @@ input, select, textarea {
 				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 				-webkit-touch-callout: none;
 				border: 0;
-				display: inline-block;
+				display: inline-flex;
+				flex-direction: column-reverse;
 			}
 
 				#header nav a:before {
-					-moz-transition: all 0.2s ease-in-out;
-					-webkit-transition: all 0.2s ease-in-out;
-					-ms-transition: all 0.2s ease-in-out;
-					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-webkit-transition: all 0.5s ease-in-out;
+					-ms-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #fff;
+					border: solid 1px rgb(255, 255, 255);
 					display: block;
-					font-size: 1.75em;
+					font-size: 4.75em;
 					height: 2.5em;
 					line-height: 2.5em;
 					position: relative;
@@ -687,22 +695,23 @@ input, select, textarea {
 				}
 
 				#header nav a:hover {
-					font-size: 1.1em;
+					font-size: 1.5em;
+					color:rgb(85, 218, 131);
 				}
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: #fff;
+						color: rgb(56, 135, 213);
 					}
 
 				#header nav a:active {
-					font-size: 0.95em;
+					font-size: 1.95em;
 					background: none;
 				}
 
 					#header nav a:active:before {
 						background-color: rgba(255, 255, 255, 0.35);
-						color: #fff;
+						color: rgb(67, 121, 228);
 					}
 
 				#header nav a span {
@@ -718,12 +727,12 @@ input, select, textarea {
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		bottom: 0;
 		cursor: default;
-		height: 6em;
+		height: 3em;
 		left: 0;
-		line-height: 8em;
+		line-height: 3em;
 		position: absolute;
 		text-align: center;
-		width: 100%;
+		width: 25;
 	}
 
 /* Wide */
@@ -987,15 +996,15 @@ input, select, textarea {
 		}
 
 		#header nav {
-			font-size: 1em;
+			font-size: 5em;
 		}
 
 			#header nav a:hover {
-				font-size: 1em;
+				font-size: 10em;
 			}
 
 			#header nav a:active {
-				font-size: 1em;
+				font-size: 10em;
 			} }
 
 /* Mobile (Portrait) */
@@ -1079,3 +1088,17 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+		
+	/* imagen */
+		.img-fluid {
+			max-width: 80%;
+			height: auto;
+		  }
+		  .rounded-circle {
+			border-radius: 50% !important;
+		  }
+		  .mx-auto {
+			margin-right: auto !important;
+			margin-left: auto !important;
+		  }
+		 
